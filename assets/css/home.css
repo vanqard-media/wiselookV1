@@ -1,0 +1,106 @@
+@import url("main.css");
+@import url("success-stories.css");
+
+.hero-section {
+    position: static; /* or static — avoid absolute unless needed */
+    overflow: hidden;
+    background: linear-gradient(
+        -160deg,
+        #FFFFFF 55%,
+        #EDF4FF 65%,
+        #DBE9FF 75%,
+        #B6D4FF 90%
+    );
+    min-height: 100vh; /* allow to expand if content is taller */
+    height: auto;
+    width: 100%;
+    padding-top: 90px; /* optional: to offset fixed header */
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top:0;
+    display: grid;
+    gap: 60px;
+    justify-content: center;
+    
+}
+  
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+  
+.bold-text {
+    background: #FFA76C;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+  
+.normal-text {
+    color: #003A6D;
+    font-weight: 200;
+}
+  
+.hero-image {
+    width: 850px;
+    height: 400px;
+    background-image: url('../images/hero-image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: center;
+}
+
+.subheadline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.demo-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 75px;
+    justify-self: center;
+    font: 400 24px 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0015FF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    font-weight: 500;
+}
+
+.demo-button:hover {
+    background-color: #FFA76C;
+    color: #FFFFFF;
+}

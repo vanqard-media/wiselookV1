@@ -1,0 +1,82 @@
+@import url("main.css");
+
+header.menu {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.menu-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-container li {
+    margin-left: 10px;
+}
+
+.menu-container a {
+    font-size: 20px;
+    color: #003A6D;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 50px;
+    height: 3px;
+    background-color: #FFA76C;
+    transition: transform 0s ease;
+}
+
+.menu-container a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.menu-container a.contact-button {
+    color: #ffffff;
+    background-color: #0015FF;
+    padding: 15px 25px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.menu-container a.contact-button:hover {
+    background-color: #FFA76C;
+    border-color: #FFA76C;
+    color: #ffffff;
+}
+
+.menu-container a.contact-button::after,
+.menu-container a.contact-button:hover::after,
+.menu-container a.logo::after,
+.menu-container a.logo:hover::after {
+    transform: scaleX(0);
+}
+

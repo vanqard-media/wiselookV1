@@ -1,0 +1,41 @@
+.success-stories {
+  background: linear-gradient(
+    340deg, 
+    #FFFFFF 55%,
+    #EDF4FF 65%,
+    #DBE9FF 75%,
+    #B6D4FF 90%);
+  position: static;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.success-tables {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.table {
+  position: relative;
+  width: 100%;
+  max-width: 613px;
+  height: auto;
+}
+
+.image-success{
+  position: relative;
+  background: url(assets/images/image_16.png)
+      100% / cover no-repeat;
+  height: 490px;
+  width: 615px;
+}
+
+.table img {
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+@import url("header.css");
+@import url("home.css");
+
+body {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    line-height: 150%; /* Mejor legibilidad entre líneas */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*Check if this is neccesary*/
+.wiselook-v1 {
+    position: static;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: grid
+;
+}
+
+
+
+p {
+    margin: 0;
+}
