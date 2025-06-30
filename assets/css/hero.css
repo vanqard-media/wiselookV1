@@ -10,24 +10,12 @@
         #DBE9FF 75%,
         #B6D4FF 90%
     );
-    min-height: 100vh; /* allow to expand if content is taller */
+    min-height: 100dvh; /* allow to expand if content is taller */
     height: auto;
     width: 100%;
-    padding-top: 90px; /* optional: to offset fixed header */
-}
-
-.container {
-    position: relative;
-    width: 90%;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 120px;  /* optional: to offset fixed header */
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    gap: 60px;
 }
 
 .hero-content {
@@ -36,7 +24,7 @@
     position: relative;
     top:0;
     display: grid;
-    gap: 60px;
+    gap: 30px;
     justify-content: center;
     
 }
@@ -49,11 +37,9 @@
 }
   
 .bold-text {
-    background: #FFA76C;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-weight: 600;
+    font-weight: 700;
+    color: #FFA76C;
 }
   
 .normal-text {
@@ -61,14 +47,18 @@
     font-weight: 200;
 }
   
-.hero-image {
+.hero-image img {
     width: 850px;
     height: 400px;
-    background-image: url('../images/hero-image.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-self: center;
+}
+
+.hero-image-mobile {
+    display: none;
+}  
+
+.hero-image-mobile img {
+    height: 550px;
+    width: 500px;
 }
 
 .subheadline {
@@ -102,4 +92,58 @@
 .demo-button:hover {
     background-color: #FFA76C;
     color: #FFFFFF;
+}
+
+/* ========= GENERAL RESPONSIVENESS ========== */
+@media (max-width: 1200px) {
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #FFFFFF 45%, #EDF4FF 55%, #DBE9FF 75%, #B6D4FF 100%);
+        align-content: center;
+        padding-top: 0px;
+        position: relative;
+        min-height: 100dvh;
+        }
+
+    .hero-image img {
+            max-width: 95%;
+            height: auto;
+        }
+}
+    
+    @media (max-width: 768px) {
+
+    .hero-section{
+        padding-top: 10px;
+    }
+
+    .hero-content {
+        gap: 30px;
+        line-height: 120%;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 400px;
+        max-width: 95%;
+        height: auto;
+    }
+
+    .hero-image-desktop {
+        display: none;
+        max-width: 0px;
+    }
+
+    .hero-image-mobile {
+        display: block;
+        width: 80%;
+        max-width: 450px;
+        height: auto;
+    }
 }

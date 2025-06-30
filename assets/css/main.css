@@ -13,10 +13,15 @@ body {
     position: static;
     background: rgba(255, 255, 255, 1);
     width: 100%;
-    display: grid
-;
+    display: flex;
+    flex-direction: column;
 }
 
+.container {
+    position: relative;
+    width: 90%;
+    height: auto;
+}
 
 
 p {

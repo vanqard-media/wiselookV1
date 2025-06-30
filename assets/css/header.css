@@ -18,10 +18,26 @@ header.menu {
     align-items: center;
 }
 
+.logo {
+    width: 200px;
+    height: 23px;
+    position: absolute;
+    z-index: 1; /* below menu layers */
+    height: auto;
+    justify-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+}
+
 .menu-container nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding-inline-start: 0px;
 }
 
 .menu-container li {
@@ -37,6 +53,10 @@ header.menu {
     transition: all 0s ease;
     position: relative;
     cursor: pointer;
+}
+
+.menu-container a.logo{
+    padding: 0px;
 }
 
 .menu-container a::after {
@@ -80,3 +100,149 @@ header.menu {
     transform: scaleX(0);
 }
 
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width:1200){
+    
+}
+@media (max-width: 1135px) {
+    header.menu {
+        display: none;
+    }
+
+    /* Estado inicial del menú (transparente) */
+    .menu-toggle {
+            display: block;
+            /* margin-bottom: 10px; */
+            position: fixed;
+            /* top: 0; */
+            /* left: 0; */
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0);
+            transition: background-color 0.1s ease, color 0.1s ease;
+            padding-top: 20px;
+        
+    }
+
+    .toggle-container{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;  /* Burger stays on the left */
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        height: 30px;
+    }
+
+    /* Estado al hacer scroll (fondo visible) */
+    .menu-toggle.scrolled {
+        background-color: white; /* Fondo oscuro */
+        background-size: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 23px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1; /* below menu layers */
+        height: auto;
+        justify-items: center;
+    }
+
+    .logo img {
+        max-height: 30px;
+        width: auto;
+        display: block;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 14px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1100; /* ensure it sits above */
+      }
+      
+      .burger-line {
+        width: 100%;
+        height: 2px;
+        background-color: #0015FF;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+      }
+      
+      .burger.open .burger-line:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      
+      .burger.open .burger-line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .burger.open .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+
+    header.menu-toggle nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-color: #ffffff;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+        padding: 40px 20px;
+        gap: 50px;
+        z-index: 1000;
+        margin-block-end: 0px;
+        margin-block-start: 28px;
+        list-style: none;
+      }
+      
+    header.menu-toggle nav ul.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+        justify-self: center;
+        left: 1.5px;
+    }
+    
+    header.menu-toggle nav ul li {
+        text-align: center;
+        margin: 0 auto;
+        width: 100px;
+    }
+    
+    header.menu-toggle nav ul li a {
+        display: inline;
+        color: #0015FF;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    header.menu-toggle nav ul {
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
