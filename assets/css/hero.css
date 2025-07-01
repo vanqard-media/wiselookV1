@@ -13,8 +13,7 @@
     align-items: baseline;
     flex-wrap: nowrap;
     justify-items: center;
-    top: 50%;
-    min-height: calc(100dvh);
+    min-height: 100dvh;
 }
 
 .hero-content {
@@ -87,6 +86,7 @@
         min-height: calc(100dvh - 60px);
         max-height: calc(100dvh - 60px);
         padding: 0;
+        padding-top: 60px;
         margin: 0;
         box-sizing: border-box;
         display: flex;
@@ -112,6 +112,7 @@
         min-height: calc(100dvh - 60px);
         max-height: calc(100dvh - 60px);
         padding: 0;
+        padding-top: 60px;
         margin: 0;
         box-sizing: border-box;
         display: flex;

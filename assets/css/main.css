@@ -115,10 +115,8 @@ body, html {
         font-size: 24px;
       }
 }
+
 @media (max-width: 768px) {
-    body {
-        gap: 0px;
-    }
 
     .container {
         width: 95%;
@@ -158,16 +156,8 @@ body, html {
     }
 }
 
-@media (max-width: 390px) {
-    body {
-        gap: 15px;
-    }
-}
 
 @media (max-width: 389px) {
-    body {
-        gap: 60px;
-    }
 
     .container {
         width: 95%;
