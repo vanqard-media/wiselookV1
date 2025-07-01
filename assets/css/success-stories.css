@@ -1,20 +1,15 @@
 @import url("home.css");
-
 .success-stories {
-  background: linear-gradient(
-    345deg, 
-    #FFFFFF 55%,
-    #EDF4FF 65%,
-    #DBE9FF 75%,
-    #B6D4FF 90%);
-  position: static;
-  overflow: hidden;
-  width: 100%;
   height: auto;
-  padding-top: 60px;
-  display: grid;
-  justify-items: center;
-
+  width: 100%;;
+  min-height: 800px; /* Fills at least 1 screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
+  text-align: center;
+  background: linear-gradient(345deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
+  align-content: center;
 }
 
 .success-content {
@@ -63,6 +58,7 @@
       display: grid;
       justify-items: center;
       background: linear-gradient(0deg, #FFFFFF 60%, #EDF4FF 75%, #DBE9FF 85%, #B6D4FF 100%);
+      min-height: 600px;
     }
 
     .success-tables {
@@ -82,21 +78,47 @@
 
     .success-stories{
       padding-top: 0;
-      background: linear-gradient(0deg, #FFFFFF 70%, #EDF4FF 75%, #DBE9FF 90%, #B6D4FF 100%);
+      background: #EDF4FF;
+      z-index: 0;
+      position: relative;
+      min-height: 800px;
+    }
+
+    .success-stories::before,
+    .success-stories::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .success-stories::before {
+      top: 0;
+      background: linear-gradient(to bottom, white, transparent);
+    }
+
+    .success-stories::after {
+      bottom: 0;
+      background: linear-gradient(to top, white, transparent);
     }
   
     .success-tables {
       flex-direction: column;
       align-items: center;
+      gap:15px;
     }
-  
-    .success-tables{
-      gap:60px;
-    }
+
     .table {
         width: 90%;
         max-width: 450px;
-        /* gap: 0px; */
         height: auto;
     }
+
+    .container {
+      z-index: 1;
+    }
+    
   }

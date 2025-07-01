@@ -1,0 +1,23 @@
+@import url("home.css");
+
+.three-steps {
+    height: auto;
+    width: 100%;;
+    min-height: 900px; /* Fills at least 1 screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center;     /* Centers horizontally */
+    text-align: center;
+    background: linear-gradient(345deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
+    align-content: center;
+}
+
+/* ========= GENERAL RESPONSIVENESS ========== */
+@media (max-width: 1200px) {
+
+}
+  
+@media (max-width: 768px) {
+    
+}

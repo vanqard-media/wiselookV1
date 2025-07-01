@@ -1,11 +1,23 @@
 @import url("header.css");
 @import url("home.css");
+@import url("introduction.css");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 
 body {
+    display: grid;
     margin: 0; /* Elimina los márgenes predeterminados */
     line-height: 150%; /* Mejor legibilidad entre líneas */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 /*Check if this is neccesary*/
@@ -21,9 +33,174 @@ body {
     position: relative;
     width: 90%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1250px;
+    gap: 60px;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    margin-block: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    margin-block: 0px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    margin-block: 0px;
+}
+
+.bold-text {
+    background-clip: text;
+    font-weight: 700;
+    color: #FFA76C;
+}
+
+.normal-text {
+    color: #003A6D;
+    font-weight: 200;
+}
 
 p {
     margin: 0;
+    text-align: justify;
+    width: 100%;
+    color: #003A6D;
+    font-size: 20px;
+    font-weight: 200;
 }
+
+.demo-button {
+    height: 70px;
+    font-size: 20px;
+    max-width: 205px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 1250px) {
+    h1 {
+        font-size: 48px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    
+    h2 {
+        font-size: 36px;
+      }
+    
+      h3 {
+        font-size: 24px;
+      }
+}
+@media (max-width: 768px) {
+    body {
+        gap: 0px;
+    }
+
+    .container {
+        width: 95%;
+        gap: 30px;
+    }
+
+    .normal-text {
+        color: #003A6D;
+        font-weight: 300;
+    }
+    
+    h1 {
+      font-size: 28px;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 200;
+    }
+  
+    .demo-button {
+        width: 65%;
+        max-width: 145px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    body {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 389px) {
+    body {
+        gap: 60px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .normal-text {
+        color: #003A6D;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+  
+    .demo-button {
+        width: 65%;
+        max-width: 145px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
