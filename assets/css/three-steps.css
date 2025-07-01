@@ -2,8 +2,9 @@
 
 .three-steps {
     height: auto;
-    width: 100%;;
-    min-height: 600px; /* Fills at least 1 screen height */
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centers vertically */
@@ -27,6 +28,10 @@
 
 /* ========= GENERAL RESPONSIVENESS ========== */
 @media (max-width: 1200px) {
+    .three-steps {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
     .step-tables{
         gap: 5px;
@@ -38,7 +43,7 @@
   
 @media (max-width: 768px) {
     .three-steps {
-        min-height: 800px; /* Fills at least 1 screen height */
+        padding-bottom: 60px;
     }
 
     .step-tables {

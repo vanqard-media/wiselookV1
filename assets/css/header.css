@@ -117,7 +117,8 @@ header.menu {
         z-index: 1000;
         background-color: rgba(255, 255, 255, 0);
         transition: background-color 0.1s ease, color 0.1s ease;
-        height: 90px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         justify-content: center;
         align-content: center;
     }
@@ -136,7 +137,6 @@ header.menu {
     .menu-toggle.scrolled {
         background-color: white; /* Fondo oscuro */
         background-size: 100%;
-        padding-bottom: 20px;
     }
     
     .logo {
@@ -242,7 +242,8 @@ header.menu {
         background-color: rgba(255, 255, 255, 0);
         transition: background-color 0.1s ease, color 0.1s ease;
         padding-top:0px;
-        height: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         justify-content: center;
         align-content: center;
     }

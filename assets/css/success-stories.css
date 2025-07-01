@@ -2,7 +2,8 @@
 .success-stories {
   height: auto;
   width: 100%;;
-  min-height: 800px; /* Fills at least 1 screen height */
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centers vertically */
@@ -58,7 +59,8 @@
       display: grid;
       justify-items: center;
       background: linear-gradient(0deg, #FFFFFF 60%, #EDF4FF 75%, #DBE9FF 85%, #B6D4FF 100%);
-      min-height: 600px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     .success-tables {
@@ -81,7 +83,8 @@
       background: #EDF4FF;
       z-index: 0;
       position: relative;
-      min-height: 750px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
 
     .success-stories::before,
