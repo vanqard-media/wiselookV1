@@ -3,7 +3,7 @@
 .three-steps {
     height: auto;
     width: 100%;;
-    min-height: 900px; /* Fills at least 1 screen height */
+    min-height: 600px; /* Fills at least 1 screen height */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centers vertically */
@@ -13,11 +13,43 @@
     align-content: center;
 }
 
+.step-tables {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.table-steps img {
+    max-width: 300px;
+}
+
+
 /* ========= GENERAL RESPONSIVENESS ========== */
 @media (max-width: 1200px) {
 
+    .step-tables{
+        gap: 5px;
+    }
+    .table-steps img {
+        max-width: 245px;
+    }
 }
   
 @media (max-width: 768px) {
+    .three-steps {
+        min-height: 800px; /* Fills at least 1 screen height */
+    }
+
+    .step-tables {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .table-steps img {
+        max-width: 245px;
+    }
+    
+    
     
 }
