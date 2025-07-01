@@ -94,12 +94,10 @@ p {
     max-width: 205px;
 }
 
-html, body {
-    height: 100%;
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
+}
 
 @media (max-width: 1250px) {
     h1 {
