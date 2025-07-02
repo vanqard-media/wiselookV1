@@ -121,6 +121,7 @@ header.menu {
         padding-bottom: 30px;
         justify-content: center;
         align-content: center;
+        
     }
 
     .toggle-container{
@@ -246,6 +247,7 @@ header.menu {
         padding-bottom: 20px;
         justify-content: center;
         align-content: center;
+        min-height: 60px; /* Ajusta según tu diseño visual */
     }
     
     header.menu-toggle nav ul {
