@@ -118,7 +118,7 @@
         margin: 0;
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background: linear-gradient(180deg, #FFFFFF 45%, #EDF4FF 55%, #DBE9FF 75%, #B6D4FF 100%);
         position: relative;
