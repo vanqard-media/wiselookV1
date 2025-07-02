@@ -1,0 +1,9 @@
+.colours {
+    color: #003A6D; /*text-blue*/
+    color: #fef8f4; /*wiselook-orange*/
+    color: rgba(255, 167, 108, 0.3); /*wiselook-orange-transparent*/
+    color: #8CB4FF; /*wiselook-blue*/
+    color: rgba(140, 180, 255, 0.3); /*wiselook-blue-transparent*/
+    color: #ECECF1; /*wiselook-grey*/
+    color: rgba(236, 236, 241, 0.5); /*wiselook-grey-transparent*/
+}

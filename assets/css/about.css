@@ -1,0 +1,128 @@
+@import url("home.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("main.css");
+
+.aboutus-section{
+    position: relative;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    padding-bottom:150px;
+
+}
+
+.aboutus-section h1 {
+    font-weight: 200;
+    color: #003A6D;
+    text-align: center;
+}
+
+.aboutus-section p {
+    width: 90%;
+}
+
+.values-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom:90px;
+}
+
+.values-content {
+    margin: 0 auto;
+}
+
+.values-section h2 {
+    color: #003A6D;
+    font-weight: 200;
+}
+
+.values-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.value-box {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.value-box .bold-text {
+    font-weight: 500;
+    color: #003A6D;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.value-box .italic-text {
+    text-align: justify;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    width: 90%;
+}
+
+.value-box .normal-text {
+    text-align:center;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 100%;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.uno {
+    background-color: rgba(255, 167, 108, 0.3); 
+}
+
+.dos {
+    background-color: rgba(236, 236, 241, 0.7); 
+}
+
+.tres {
+    background-color: rgba(140, 180, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .values-content {
+        width: 100%;
+        gap: 10px;
+    }
+    .value-box {
+        width: 48%
+
+    }
+    
+    .value-box .bold-text {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    
+    .value-box .italic-text {
+        text-align: center;
+        font-size: 14px;
+        width: 90%;
+    }
+    
+    .value-box .normal-text {
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+}
