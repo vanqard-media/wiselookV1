@@ -86,7 +86,7 @@
         min-height: calc(100dvh - 60px);
         max-height: calc(100dvh - 60px);
         padding: 0;
-        padding-top: 60px;
+        padding-top: calc(60px + env(safe-area-inset-top, 0px));
         margin: 0;
         box-sizing: border-box;
         display: flex;
@@ -112,7 +112,7 @@
         min-height: calc(100dvh - 60px);
         max-height: calc(100dvh - 60px);
         padding: 0;
-        padding-top: 60px;
+        padding-top: calc(60px + env(safe-area-inset-top, 0px));
         margin: 0;
         box-sizing: border-box;
         display: flex;
