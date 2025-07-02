@@ -1,24 +1,25 @@
 @import url("home.css");
 @import url("main.css");
 
-/*
+
 .hero-section {
     outline: 2px solid red;
     width: 100%;
     overflow: hidden;
     background: linear-gradient(-160deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
-    display: grid;
+    display: flex;
     justify-content: center;
-    padding-top: calc(90px + env(safe-area-inset-top, 0px));
-    box-sizing: border-box;
+    /* padding-top: calc(90px + env(safe-area-inset-top, 0px)); */
+    /* box-sizing: border-box; */
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: nowrap;
-    justify-items: center;
+    /* justify-items: center; */
     min-height: 100dvh;
-    position: static;
+    position: relative;
+    top: 90px;
 }
-*/
+
 .hero-content {
     text-align: center;
     width: 100%;
