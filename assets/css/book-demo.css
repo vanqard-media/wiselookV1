@@ -1,0 +1,45 @@
+@import url("home.css");
+@import url("main.css");
+
+.bookdemo-container {
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bookdemo-text {
+    width: 80%;
+    border-color: #003A6D;
+    border: #003A6D;
+    border-radius: 0%;
+    border-width: 3px;
+    padding-bottom: 30px;
+}
+
+.bookdemo-text h3 {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.bookdemo-text p {
+    text-align: justify;
+}
+
+@media(max-width:768px) {
+    .bookdemo-text h3 {
+        text-align: center;
+    }
+
+    .bookdemo-text {
+        border-color: #003A6D;
+        border: #003A6D;
+        border-radius: 0%;
+        border-width: 3px;
+        width: 90%;
+    }
+}

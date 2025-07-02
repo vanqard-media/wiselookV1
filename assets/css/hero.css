@@ -113,9 +113,9 @@
 @media (max-width: 768px) {
 
     .hero-section {
-        height: 100dvh;
-        min-height: 100dvh;
-        max-height: 100dvh;
+        height: calc(100dvh-60px);
+        min-height: calc(100dvh-60px);
+        max-height: calc(100dvh-60px);
        /* padding: 0;
         padding-top: calc(60px + env(safe-area-inset-top, 0px));
         margin: 0;
@@ -124,7 +124,8 @@
         justify-content: flex-start;
         align-items: center;
         background: linear-gradient(180deg, #FFFFFF 45%, #EDF4FF 55%, #DBE9FF 75%, #B6D4FF 100%);
-        */ position: relative;
+        */ 
+        position: relative;
         overflow: hidden;
         /*flex-direction: column;
         gap: 30px;*/

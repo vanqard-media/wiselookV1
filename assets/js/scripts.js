@@ -59,3 +59,15 @@ fetch(headerFile)
     });
   })
   .catch(error => console.error('Error al cargar el header:', error));
+
+// ===============================
+// Load Shared Footer
+// ===============================
+const footerFile = 'footer.html';
+
+fetch(footerFile)
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  })
+  .catch(error => console.error('❌ Error al cargar el footer:', error));
