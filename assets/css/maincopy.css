@@ -1,0 +1,86 @@
+:root {
+    --button: #371BFF;
+    --link: #371BFF;
+    --cta: #371BFF;
+    --highlights: #371BFF;
+    --main-background: #ECECF1;
+    --hover: #8CB4FF;
+    --secondary-background: #8CB4FF;
+    --subtle-backgrounds: #B6D5FF;
+    --section-fills: #B6D5FF;
+    --emphasize: #FFA76C;
+    --text: #000000;
+    --button-text: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--main-background);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin-block: 0px;
+    text-align: center;
+    color: var(--text);
+}
+
+strong {
+    color: var(--emphasize);
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.demo-button {
+    background-color: var(--button);
+    color: var(--button-text);
+    padding: 20px 60px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.demo-button:hover {
+    background-color: var(--emphasize);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    p { font-size: 16px; }
+    .demo-button { font-size: 14px; padding: 15px 30px; }
+}

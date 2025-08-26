@@ -1,0 +1,140 @@
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media(max-width:768px) {
+    .hero-image img { width: 80%; }
+}
+
+/* Success Stories */
+.success-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto 90px auto;
+    text-align: center;
+}
+
+.success-tables {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.table img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Intro Section */
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.iphone-img {
+    max-width: 250px;
+    height: auto;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+}
+
+.formula-img {
+    max-width: 620px;
+    width: 100%;
+    height: auto;
+}
+
+/* Sophia Video Section */
+.sophia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.sophia p {
+    max-width: 430px;
+    text-align: justify;
+}
+
+video {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+}
+
+/* Three Steps */
+.three-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+.step-tables {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.table-steps img {
+    max-width: 300px;
+}
+
+/* Book Demo Section */
+.bookdemo-container .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bookdemo-text h3 {
+    text-align: left;
+}
+
+.bookdemo-text p {
+    text-align: left;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .intro-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sophia {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

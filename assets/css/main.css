@@ -5,6 +5,21 @@
 @import url("footer.css");
 @import url("about.css");
 
+:root {
+    --button: #371BFF;
+    --link: #371BFF;
+    --cta: #371BFF;
+    --highlights: #371BFF;
+    --main-background: #ECECF1;
+    --hover: #8CB4FF;
+    --secondary-background: #8CB4FF;
+    --subtle-backgrounds: #B6D5FF;
+    --section-fills: #B6D5FF;
+    --emphasize: #FFA76C;
+    --text: #000000;
+    --button-text: #FFFFFF;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -12,13 +27,6 @@
 html, body {
     margin: 0;
     overflow-x: hidden;
-}
-
-
-body {
-    line-height: 150%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
 }
 
 /*Check if this is neccesary*/
