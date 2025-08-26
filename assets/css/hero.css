@@ -9,8 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 30px;
     gap: 15px;
     min-height: 100vh;
 }
@@ -26,6 +25,7 @@
 }
   
 .headline {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     line-height: 150%;
@@ -89,8 +89,7 @@
 
     .hero-section {
         max-width: 90%;
-        margin-top: 70px;
-        margin-bottom: 70px;
+        margin-top: 30px;
     }
 
     .hero-content {
