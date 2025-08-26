@@ -3,7 +3,6 @@
 .three-steps {
     height: auto;
     width: 100%;
-    padding-top: 30px;
     padding-bottom: 90px;
     display: flex;
     flex-direction: column;
@@ -28,7 +27,6 @@
 /* ========= GENERAL RESPONSIVENESS ========== */
 @media (max-width: 1200px) {
     .three-steps {
-        padding-top: 30px;
         padding-bottom: 30px;
     }
 
