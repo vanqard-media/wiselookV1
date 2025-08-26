@@ -10,7 +10,6 @@
     justify-content: center; /* Centers vertically */
     align-items: center;     /* Centers horizontally */
     text-align: center;
-    background: linear-gradient(345deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
     align-content: center;
 }
 
@@ -46,6 +45,10 @@
         padding-bottom: 60px;
     }
 
+    .three-steps h2 {
+        width: 90%;
+    }
+
     .step-tables {
         flex-wrap: wrap;
         gap: 10px;
@@ -53,8 +56,5 @@
 
     .table-steps img {
         max-width: 245px;
-    }
-    
-    
-    
+    } 
 }

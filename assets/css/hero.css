@@ -90,6 +90,7 @@
     .hero-section {
         max-width: 90%;
         margin-top: 30px;
+        max-height: 90vh;
     }
 
     .hero-content {
