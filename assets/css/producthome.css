@@ -15,8 +15,31 @@
     width: 100%;
 }
 
+.hero-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 80%;
+}
+
+.introduction-section,
+.three-steps,
+.bookdemo-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 @media(max-width:768px) {
-    .hero-image img { width: 80%; }
+    .hero-image img { 
+        width: 80%; 
+    }
+
+    .introduction-section,
+    .three-steps,
+    .bookdemo-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 /* Success Stories */
