@@ -139,22 +139,22 @@ body, html {
     }
     
     h1 {
-      font-size: 28px;
+      font-size: 24px;
       width: 100%;
       text-align: center;
       justify-content: center;
     }
   
     h2 {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 200;
     }
   
