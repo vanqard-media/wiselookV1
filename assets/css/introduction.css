@@ -154,12 +154,12 @@
 }
 
 .video-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    max-width: 250px;
+  /*position: relative; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 25%;
+  max-width: 250px;
 }
 
 .sophia-container {
@@ -180,7 +180,7 @@ p.sophia-text {
     max-width: 430px;
 }
 
-.video-container img {
+video {
     max-height: 500px;
     max-width: 250px;
     height: auto;
@@ -457,6 +457,10 @@ p.sophia-text {
     text-align: center;
     gap: 20px;
     width: 89%;
+  }
+
+  video {
+    max-height: 350px;
   }
 }
   

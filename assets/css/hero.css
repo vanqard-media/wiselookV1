@@ -89,9 +89,9 @@
 
     .hero-section {
         max-width: 90%;
-        margin-top: 30px;
+        margin-top: 20px;
         min-height: 90vh;
-        gap: 5px;
+        gap: 10px;
     }
 
     .hero-content {
