@@ -91,7 +91,7 @@
         max-width: 90%;
         margin-top: 20px;
         min-height: 90vh;
-        gap: 10px;
+        gap: 15px;
     }
 
     .hero-content {
@@ -105,8 +105,8 @@
     }
 
     .hero-image img {
-        width: 350px;
-        max-width: 95%;
+        width: 300px;
+        max-width: 80%;
         height: auto;
     }
 
