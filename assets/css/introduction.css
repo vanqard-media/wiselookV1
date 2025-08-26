@@ -1,5 +1,4 @@
 .introduction-section {
-    background: linear-gradient(345deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
     position: static;
     overflow: hidden;
     width: 100%;
@@ -52,7 +51,6 @@
 }
 
 .screen-container {
-    
     background: rgba(196, 196, 196, 0);
     height: 592px;
     width: 289px;
@@ -152,7 +150,7 @@
     align-items: center;
     flex-wrap: nowrap;
     gap: 30px;
-    width: 100%;
+    width: 90%;
 }
 
 .video-container {
@@ -249,7 +247,6 @@ p.sophia-text {
 
 @media (max-width: 1250px) {
   .introduction-section {
-    background: linear-gradient(345deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
     position: static;
     overflow: hidden;
     width: 100%;
@@ -300,7 +297,7 @@ p.sophia-text {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        max-width: 100%;
+        max-width:94%;
         width: 90%;
         gap: 30px;
     }
@@ -369,7 +366,6 @@ p.sophia-text {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: linear-gradient(30deg, #B6D4FF 55%, #DBE9FF 65%, #EDF4FF 75%, #FFFFFF 90%);
       padding-top: 0px;
       padding-bottom: 60px;
     }
@@ -388,7 +384,7 @@ p.sophia-text {
     }
 
     .screen-iphone img {
-      width:50%;
+      width:45%;
     }
   
     .imagen-iphone.container {
@@ -434,10 +430,6 @@ p.sophia-text {
       padding: 0 10px;
     }
 
-    h3 .normal-text {
-        font-weight: 200;
-    }
-
     .solve-talvis {
       position: relative;
       display: flex;
@@ -450,8 +442,8 @@ p.sophia-text {
       gap: 30px;
   }
 
-  .solve-talvis h3 {
-    width: 99%;
+  .solve-talvis h2 {
+    width: 94%;
   }
 
   p.sophia-text {
