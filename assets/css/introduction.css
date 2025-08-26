@@ -246,12 +246,6 @@ p.sophia-text {
   height: auto;
 }
 
-.hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
 
 @media (max-width: 1250px) {
   .introduction-section {

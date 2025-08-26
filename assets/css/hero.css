@@ -2,30 +2,22 @@
 @import url("main.css");
 
 
-.hero-section {
-    outline: 2px solid red;
+.hero-section { 
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(-160deg, #FFFFFF 55%, #EDF4FF 65%, #DBE9FF 75%, #B6D4FF 90%);
     display: flex;
-    justify-content: center;
-    /* padding-top: calc(90px + env(safe-area-inset-top, 0px)); */
-    /* box-sizing: border-box; */
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
-    /* justify-items: center; */
-    min-height: 100dvh;
-    position: relative;
-    top: 90px;
-    padding-bottom: 60px;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    gap: 15px;
 }
 
 .hero-content {
     text-align: center;
     width: 100%;
     position: relative;
-    /*top:0;*/
     display: grid;
     gap: 20px;
     justify-content: center;
@@ -38,12 +30,11 @@
     line-height: 150%;
     letter-spacing: 1px;
 }
-  
+
 .hero-image {
-    width: 100%;
     display: flex;
     justify-content: center;
-  }
+}
   
 .hero-image-mobile {
     display: none;
@@ -54,8 +45,8 @@
     width: 500px;
 }
 
-.hero-image-img {
-    width: 90%;
+.hero-image img {
+    width: 70%;
     height: auto;
 }
 
@@ -86,24 +77,6 @@
 
 /* ========= GENERAL RESPONSIVENESS ========== */
 @media (max-width: 1200px) {
-    /*
-    .hero-section {
-        height: 100dvh;            
-        min-height: 100dvh;
-        max-height: 100dvh;
-        padding: 0;
-        padding-top: calc(60px + env(safe-area-inset-top, 0px));
-        margin: 0;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(180deg, #FFFFFF 45%, #EDF4FF 55%, #DBE9FF 75%, #B6D4FF 100%);
-        position: relative;
-        overflow: hidden;
-        position: static;
-        top: 0%;
-    }*/
 
     .hero-image img {
             max-width: 95%;
@@ -114,23 +87,8 @@
 @media (max-width: 768px) {
 
     .hero-section {
-        /*height: calc(100dvh-60px);
-        min-height: calc(100dvh-60px);
-        max-height: calc(100dvh-60px);*
-       /* padding: 0;
-        padding-top: calc(60px + env(safe-area-inset-top, 0px));
-        margin: 0;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        background: linear-gradient(180deg, #FFFFFF 45%, #EDF4FF 55%, #DBE9FF 75%, #B6D4FF 100%);
-        */ 
-        position: relative;
-        overflow: hidden;
-        /*flex-direction: column;
-        gap: 30px;*/
-        top: 60px;
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
 
     .hero-content {
@@ -164,7 +122,6 @@
 
 @media (max-width: 389px) {
     .hero-section {
-        /*justify-content: flex-start;*/
-        gap: 0px;
+        gap: 15px;
     }
 }
