@@ -1,0 +1,138 @@
+section {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 90px;
+    width: 90%;
+    max-width: 1250px;
+}
+
+.product-container {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-intro {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-text-formula {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.formula-product {
+    max-height: 300px;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+.dashboard {
+    width: 45%;
+    box-shadow: 0 0 5px 1px lightgray;
+}
+
+.list-container {
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    text-align: justify;
+}
+
+.list-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.img-dktp {
+    display: block;
+}
+
+.img-mbl {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+    section {
+        gap: 15px;
+        margin-top: 30%;
+    }
+
+    .list-container {
+        width: 90%;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .list-container ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        padding-left: 0;
+        font-size: 14px;
+        list-style: none;
+    }
+
+    .product-intro {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formula-product {
+
+        width: 90%;
+        height: auto;
+        display: block;
+        z-index: 1;
+    }
+
+    .dashboard {
+        width: 90%;
+    }
+
+    .img-mbl {
+        display: block;
+    }
+    
+    .img-dktp {
+        display: none;
+    }
+}
+
+
+@media (max-width: 389px) {
+
+}
