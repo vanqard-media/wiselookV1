@@ -1,36 +1,41 @@
-@import url("home.css");
-@import url("main.css");
-
 .bookdemo-container {
     width: 100%;
-    padding-bottom: 30px;
-    background-color: #FFFFFF;
+    padding: 60px;
+    background-color: #F8FBFF;
+    border-top: 2px solid var(--main-background);
+    /*border-top: 1px solid var(--button);
+    border-bottom: 2px solid var(--button);*/
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 
 }
 
 .bookdemo-text {
     width: 80%;
-    border-color: #003A6D;
-    border: #003A6D;
     border-radius: 0%;
     border-width: 3px;
-    padding-bottom: 30px;
 }
 
-.bookdemo-text h3 {
+.bookdemo-text h2 {
     text-align: left;
     padding-bottom: 30px;
+    font-weight: 500;
+    color: var(--text);
 }
 
 .bookdemo-text p {
     text-align: justify;
+    width: 100%;
 }
 
 @media(max-width:768px) {
+    .bookdemo-container {
+        padding: 30px 15px;
+    }
+
     .bookdemo-text h3 {
         text-align: center;
     }

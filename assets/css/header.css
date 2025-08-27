@@ -1,5 +1,3 @@
-
-
 /* ===== Base Header ===== */
 .site-header {
   position: fixed;
@@ -7,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: white;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +14,7 @@
 }
 
 .site-header.scrolled {
-  background-color: #ffffff;
+  background-color: var(--button-text);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
@@ -52,7 +50,7 @@
 
 .main-nav li a {
   font-size: 18px;
-  color: #003a6d;
+  color: var(--text);
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -69,7 +67,7 @@
   transform-origin: center;
   width: 50px;
   height: 3px;
-  background-color: #ffa76c;
+  background-color: var(--hover);
   transition: transform 0.2s ease;
 }
 
@@ -79,8 +77,8 @@
 
 /* Contact button */
 .main-nav li a.contact-button {
-  color: #fff;
-  background-color: #0015ff;
+  color: var(--button-text);
+  background-color: var(--button);
   padding: 12px 22px;
   border-radius: 8px;
   font-weight: 500;
@@ -89,8 +87,9 @@
 }
 
 .main-nav li a.contact-button:hover {
-  background-color: #ffa76c;
-  border-color: #ffa76c;
+  background-color: var(--hover);
+  color: var(--text);
+  border-color: var(--hover);
 }
 
 /* Remove underline animation for contact */
@@ -115,13 +114,13 @@
 .burger-line {
   width: 100%;
   height: 2px;
-  background-color: #0015ff;
+  background-color: var(--button);
   border-radius: 1px;
   transition: all 0.3s ease;
 }
 
 .burger.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translateY(7px);
+  transform: rotate(45deg) translateY(10px);
 }
 
 .burger.open .burger-line:nth-child(2) {
@@ -129,7 +128,7 @@
 }
 
 .burger.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translateY(-7px);
+  transform: rotate(-45deg) translateY(-10px);
 }
 
 /* ===== Mobile Styles ===== */
@@ -156,7 +155,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 90px);
-    background-color: #ffffff;
+    background-color: var(--button-text);
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
@@ -186,9 +185,10 @@
   .main-nav ul {
     top: 70px;
     height: calc(100vh - 70px);
+    gap: 80px;
   }
 
   .logo img {
-    max-height: 26px;
+    max-height: 30px;
   }
 }

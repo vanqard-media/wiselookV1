@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-top: 30px;
     min-height: 100vh;
 }
 
@@ -16,10 +17,8 @@
 }
 
 .hero-image img {
-    display: block;
-    margin: 0 auto;
-    max-width: 700px;
-    width: 80%;
+    width: 70%;
+    height: auto;
 }
 
 .introduction-section,
