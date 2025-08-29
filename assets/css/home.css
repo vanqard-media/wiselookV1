@@ -1,19 +1,24 @@
 /* ========= HERO ========== */
 .hero-section { 
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  padding-top: 30px;
   gap: 40px;
   min-height: 100vh;
+  background: url('/assets/images/ChatGPT\ Image\ Aug\ 29\,\ 2025\,\ 11_31_47\ PM.png') no-repeat center center/cover;
+}
+
+.hero-section h1 { 
+  width: 90%;
 }
 
 .hero-content {
   text-align: center;
-  width: 100%;
+  width: 90%;
   position: relative;
   display: grid;
   gap: 20px;
@@ -61,8 +66,6 @@
 @media (max-width: 768px) {
 
   .hero-section {
-      max-width: 90%;
-      margin-top: 5px;
       min-height: 90vh;
       gap: 20px;
   }
@@ -106,7 +109,6 @@
 
 .success-stories {
   height: auto;
-  width: 90%;
   display: flex;
   padding: 0px;
   flex-direction: column;
