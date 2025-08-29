@@ -241,6 +241,8 @@
   flex-direction: column;
   gap: 30px;
   margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .introducing-wiselook-2, .introducing-wiselook-2 span {
@@ -683,6 +685,11 @@ height: auto;
   gap: 30px;
   align-items: center;
   width: 90%;
+  margin-bottom: 60px;
+}
+
+.steps-container p {
+  text-align: center;
 }
 
 .step-tables {
@@ -746,6 +753,7 @@ height: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 30px;
   }
 }
   

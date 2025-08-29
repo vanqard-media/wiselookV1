@@ -100,23 +100,6 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.12);
 }
 
-/* Contact button
-.main-nav li a.contact-button {
-  color: var(--button-text);
-  background-color: var(--button);
-  padding: 12px 22px;
-  border-radius: 8px;
-  font-weight: 500;
-  border: 2px solid transparent;
-  transition: all 0.2s ease;
-}
-
-.main-nav li a.contact-button:hover {
-  background-color: var(--hover);
-  color: var(--text);
-  border-color: var(--hover);
-}*/
-
 /* Remove underline animation for contact */
 .main-nav li a.contact-button::after {
   display: none;

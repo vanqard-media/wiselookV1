@@ -69,3 +69,14 @@ fetch(footerFile)
     document.getElementById("footer").innerHTML = data;
   })
   .catch((error) => console.error("❌ Error loading footer:", error));
+
+// ===============================
+// Load Shared Book a Demo
+// ===============================
+const demoFile = "demo.html";
+fetch(demoFile)
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("demo").innerHTML = data;
+  })
+  .catch((error) => console.error("❌ Error loading demo:", error));
