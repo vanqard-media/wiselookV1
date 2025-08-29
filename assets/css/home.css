@@ -442,16 +442,6 @@ height: auto;
 
 
 @media (max-width: 1250px) {
-/*.introduction-section {
-  position: static;
-  overflow: hidden;
-  width: 90%;
-  height: auto;
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
-}   */
 
   .screen-iphone {
     flex-direction: row;
@@ -678,17 +668,12 @@ height: auto;
 
 /* ========= GENERAL RESPONSIVENESS ========== */
 @media (max-width: 1200px) {
-  .three-steps {
-  }
   .table-steps img {
       max-width: 245px;
   }
 }
 
 @media (max-width: 768px) {
-  .three-steps {
-  }
-
   .three-steps h2 {
       width: 90%;
   }
