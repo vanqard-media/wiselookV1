@@ -192,9 +192,13 @@
   }
 
   .main-nav ul {
-    top: 70px;
+    top: 0px;
     height: calc(100vh - 70px);
     gap: 80px;
+  }
+
+  .main-nav ul .logo {
+    top: -30px;
   }
 
   .logo img {
