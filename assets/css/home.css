@@ -524,7 +524,8 @@ height: auto;
   }
 
   .video-container {
-    width: 45%;
+    width: 200px;
+    height: 350px;
   }
 
 

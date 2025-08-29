@@ -4,6 +4,8 @@
     color: inherit;
     font-family: inherit;
     padding: 100px 200px;
+    position: relative;
+    bottom: 0;
   }
 
   .footer-top {
