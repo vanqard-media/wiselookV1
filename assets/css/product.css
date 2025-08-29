@@ -1,11 +1,10 @@
 section {
-    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    margin-bottom: 90px;
+    margin:0;
     width: 90%;
     max-width: 1250px;
 }
@@ -15,7 +14,25 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 90px;
+}
+
+.intro-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    margin-bottom: 60px;
+}
+
+.strategic-alignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .product-intro {
@@ -24,7 +41,6 @@ section {
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .product-text-formula {
@@ -42,7 +58,6 @@ section {
     height: auto;
     display: block;
     z-index: 1;
-    margin-bottom: 60px;
 }
 
 .dashboard {
@@ -83,7 +98,10 @@ section {
 @media (max-width: 768px) {
     section {
         gap: 15px;
-        margin-top: 30%;
+    }
+
+    .product-container {
+        margin-top: 70px;
     }
 
     .list-container {
@@ -102,6 +120,16 @@ section {
         padding-left: 0;
         font-size: 14px;
         list-style: none;
+    }
+
+    .intro-product {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .strategic-alignment {
+        gap: 15px;
+        margin-bottom: 30px;
     }
 
     .product-intro {

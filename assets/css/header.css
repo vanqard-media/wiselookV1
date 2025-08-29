@@ -75,7 +75,32 @@
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Contact button */
+
+.main-nav li a.contact-button {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 9999px;           /* pill shape */
+  color: var(--button-text);
+  background: linear-gradient(135deg, var(--button) 0%, var(--hover) 100%);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  transition: all 0.25s ease;
+}
+
+.main-nav li a.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+  background: linear-gradient(135deg, var(--hover) 0%, var(--main-background) 100%);
+  color: var(--button-text);  /* ensures high contrast */
+}
+
+.main-nav li a.contact-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+}
+
+/* Contact button
 .main-nav li a.contact-button {
   color: var(--button-text);
   background-color: var(--button);
@@ -90,12 +115,12 @@
   background-color: var(--hover);
   color: var(--text);
   border-color: var(--hover);
-}
+}*/
 
 /* Remove underline animation for contact */
 .main-nav li a.contact-button::after {
   display: none;
-}
+}  
 
 /* ===== Burger (Mobile only) ===== */
 .burger {
@@ -117,10 +142,11 @@
   background-color: var(--button);
   border-radius: 1px;
   transition: all 0.3s ease;
+  transform-origin: center;
 }
 
 .burger.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translateY(10px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 
 .burger.open .burger-line:nth-child(2) {
@@ -128,7 +154,7 @@
 }
 
 .burger.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translateY(-10px);
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 /* ===== Mobile Styles ===== */

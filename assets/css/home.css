@@ -154,10 +154,11 @@
   }
   
   @media (max-width: 768px) {
-    .success-stories{
+    .success-stories {
       z-index: 0;
       position: relative;
-      margin-block-end: 60px;
+      margin-block-end: 30px;
+      gap: 15px;
     }
 
     /*.success-stories::before,
@@ -207,8 +208,6 @@
   justify-items: center;
   justify-content: center;
   align-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .introduction-container {
@@ -235,6 +234,13 @@
   align-items: center;
   flex-wrap: nowrap;
   gap: 9
+}
+
+.intro-wiselook {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
 .introducing-wiselook-2, .introducing-wiselook-2 span {
@@ -285,8 +291,8 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   width: 100%;
+  gap: 30px;
 }
 
 .formula-container img { 
@@ -351,6 +357,7 @@
   flex-wrap: nowrap;
   gap: 30px;
   width: 90%;
+  margin-bottom: 60px;
 }
 
 .video-container {
@@ -458,13 +465,17 @@ height: auto;
   justify-items: center;
   justify-content: center;
   align-content: center;
-  padding-top: 0px;
-  padding-bottom: 30px;
 }   
 
   .screen-iphone {
     flex-direction: row;
-    gap: 40px;
+  }
+
+  .intro-wiselook {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
   }
 
   .screen-iphone img {
@@ -500,7 +511,6 @@ height: auto;
       justify-content: center;
       align-items: center;
       flex-wrap: nowrap;
-      gap: 30px;
   }
 
   .sophia-container {
@@ -538,7 +548,6 @@ height: auto;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 30px;
       width: 100%;
   }
 
@@ -561,8 +570,6 @@ height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 60px;
   }
 
   .introduction-container {
@@ -572,10 +579,9 @@ height: auto;
 
   .screen-iphone {
     flex-direction: column;
-    gap: 30px;
     width: 100%;
     align-items: center;
-    padding-bottom: 30px;
+    gap: 15px;
   }
 
   .screen-iphone img {
@@ -597,12 +603,13 @@ height: auto;
   .formula-container {
     width: 100%;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
 
   .formula-text-container {
     width: 90%;
     text-align: center;
+    gap: 15px;
   }
 
   .formula-mobile {
@@ -632,7 +639,8 @@ height: auto;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 15px;
+    margin-bottom: 30px;
   }
 
   .sophia-container {
@@ -644,7 +652,7 @@ height: auto;
 
   p.sophia-text {
     width: 100%;
-    text-align: center;
+    text-align: justify;
   }
 
   video {
@@ -660,13 +668,21 @@ height: auto;
 .three-steps {
   height: auto;
   width: 100%;
-  padding-bottom: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centers vertically */
   align-items: center;     /* Centers horizontally */
   text-align: center;
   align-content: center;
+  margin-bottom: 60px;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 90%;
 }
 
 .step-tables {
@@ -674,7 +690,7 @@ height: auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .table-steps img {
@@ -685,11 +701,6 @@ height: auto;
 /* ========= GENERAL RESPONSIVENESS ========== */
 @media (max-width: 1200px) {
   .three-steps {
-      padding-bottom: 30px;
-  }
-
-  .step-tables{
-      gap: 5px;
   }
   .table-steps img {
       max-width: 245px;
@@ -698,7 +709,7 @@ height: auto;
 
 @media (max-width: 768px) {
   .three-steps {
-      padding-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .three-steps h2 {
@@ -707,7 +718,7 @@ height: auto;
 
   .step-tables {
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 15px;
   }
 
   .table-steps img {
@@ -729,6 +740,12 @@ height: auto;
 @media (max-width: 768px) {
   .container {
       width: 95%;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
   

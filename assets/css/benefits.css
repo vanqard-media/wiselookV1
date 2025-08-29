@@ -1,0 +1,161 @@
+:root {
+  --button: #371BFF;
+  --link: #371BFF;
+  --cta: #371BFF;
+  --highlights: #371BFF;
+  --main-background: #ECECF1;
+  --hover: #8CB4FF;
+  --secondary-background: #8CB4FF;
+  --subtle-background: #B6D5FF;
+  --section-fills: #B6D5FF;
+  --emphasize: #FFA76C;
+  --text: #000000;
+  --button-text: #FFFFFF;
+}
+
+.benefits-container {
+  width: 80%;
+  margin-top: 90px;
+}
+
+.intro-benefits   {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.bft-container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+
+.bft-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 30px;
+  /*border: var(--button), 2.5px, solid;*/
+  background: var(--button-text);
+  color: var(--text);
+  position: relative;
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: 'PPPangramSans', sans-serif;
+  box-shadow: rgba(60,64,67,0.3) 0 0px 10px 0, rgba(60,64,67,0.15) 0 2px 6px 2px;
+}
+
+.bft-box h4 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.bft-box p {
+  text-align: justify;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.left-cntr {
+  left: 0;
+}
+
+.right-cntr {
+  left: 50%;
+}
+
+.bft-container img {
+  position: absolute;
+  width: 40px;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+  background: var(--button-text);
+  display: block;
+  padding: 6px 6px;
+  border: var(--button), 4px, solid;
+  border-radius: 50%;
+}
+
+.right-cntr img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--button);
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .benefits-container {
+    width: 90%;
+  }
+
+  .intro-benefits {
+    gap: 15px;
+  }
+
+  .timeline {
+    margin: 30px auto;
+    padding: 0 2px;
+  }
+
+  .bft-container {
+    width: 100%;
+    padding: 10px 20px;
+    left: 0 !important;
+  }
+
+  /* Move the timeline line to the right */
+  .timeline::after {
+    left: auto;
+    right: 20px; /* adjust distance from right edge */
+  }
+
+  .bft-container img {
+    right: 0 !important;
+    left: auto;
+    top: 20px;
+    border: var(--button), 2.5px, solid;
+  }
+
+  .bft-box {
+    margin-left: -15px;
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .bft-box h4 {
+    text-align: start;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .bft-box p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .timeline::after {
+    width: 2.5px;
+  }
+
+}
+
+
