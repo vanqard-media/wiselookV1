@@ -8,7 +8,7 @@ section {
 }
 
 .product-container {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -59,7 +59,7 @@ section {
 }
 
 .dashboard {
-    width: 45%;
+    width: 40%;
     box-shadow: 0 0 5px 1px lightgray;
 }
 
@@ -100,6 +100,7 @@ section {
 
     .product-container {
         margin-top: 70px;
+        width: 90%;
     }
 
     .list-container {
