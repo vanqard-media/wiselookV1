@@ -50,7 +50,7 @@
 }
 
 .contact a {
-    color: #FFA76C;
+    color: var(--button);
     font-weight: 400;
 }
 
