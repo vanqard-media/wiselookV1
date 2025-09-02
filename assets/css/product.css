@@ -36,7 +36,7 @@ section {
 .product-intro {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -47,6 +47,7 @@ section {
     justify-content: start;
     align-items: center;
     gap: 30px;
+    width: 40%;
 }
 
 .formula-product {
@@ -59,7 +60,7 @@ section {
 }
 
 .dashboard {
-    width: 40%;
+    width: 30%;
     box-shadow: 0 0 5px 1px lightgray;
 }
 
@@ -138,6 +139,10 @@ section {
         align-items: center;
     }
 
+    .product-text-formula {
+        width: 100%;
+    }
+
     .formula-product {
 
         width: 90%;
@@ -147,7 +152,7 @@ section {
     }
 
     .dashboard {
-        width: 90%;
+        width: 80%;
     }
 
     .img-mbl {
