@@ -48,6 +48,11 @@
   gap: 20px;
 }
 
+/*.main-nav ul .img-mbl {
+  display: none;
+}
+*/
+
 .main-nav li a {
   font-size: 18px;
   color: var(--text);
@@ -182,6 +187,10 @@
 
   .logo img {
     max-height: 30px;
+  }
+
+  .img-mbl {
+    display: contents;
   }
 }
 
