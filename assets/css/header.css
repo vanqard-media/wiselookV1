@@ -186,7 +186,7 @@
 
   .main-nav ul .img-mbl {
     display: block;
-    padding: 0;
+    top: -28px;
   }
 
   .logo img {
