@@ -184,6 +184,11 @@
     pointer-events: auto;
   }
 
+  .main-nav ul .img-mbl {
+    display: block;
+    padding: 0;
+  }
+
   .logo img {
     max-height: 30px;
   }
