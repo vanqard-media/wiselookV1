@@ -48,10 +48,9 @@
   gap: 20px;
 }
 
-/*.main-nav ul .img-mbl {
+.main-nav ul .img-mbl {
   display: none;
 }
-*/
 
 .main-nav li a {
   font-size: 18px;
