@@ -27,6 +27,10 @@
   position: relative;
 }
 
+.main-nav ul .img-mbl {
+  display: none;
+}
+
 /* ===== Logo ===== */
 .logo {
   display: block;
@@ -46,10 +50,6 @@
   margin: 0;
   padding: 0;
   gap: 20px;
-}
-
-.main-nav ul .img-mbl {
-  display: none;
 }
 
 .main-nav li a {
