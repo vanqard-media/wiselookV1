@@ -206,7 +206,7 @@
 
   .main-nav ul {
     top: 0px;
-    height: calc(100vh - 70px);
+    height: calc(100vh);
     gap: 80px;
   }
 
